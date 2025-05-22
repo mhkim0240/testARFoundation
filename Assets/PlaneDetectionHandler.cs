@@ -62,14 +62,14 @@ public class PlaneDetectionHandler : MonoBehaviour
             foreach (ARPlane plane in args.updated)
             {
                 Debug.Log($"[Plane Updated] {plane.trackableId}");
-                txtStatPlane[1].text = $"[Plane Updated] Plane Added: {plane.trackableId}";
+                txtStatPlane[1].text = $"[Plane Updated] Plane Updated: {plane.trackableId}";
             }
 
             // 제거된 평면
             foreach (ARPlane plane in args.removed)
             {
                 Debug.Log($"[Plane Removed] {plane.trackableId}");
-                txtStatPlane[2].text = $"[Plane Removed] Plane Added: {plane.trackableId}";
+                txtStatPlane[2].text = $"[Plane Removed] Plane Removed: {plane.trackableId}";
             }
         }
     }

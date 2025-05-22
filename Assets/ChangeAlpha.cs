@@ -14,7 +14,7 @@ public class ChangeAlpha : MonoBehaviour
     }
     void cc()
     {
-var img = GetComponent<Image>();
+        var img = GetComponent<Image>();
         img.color = new Color(img.color.r, img.color.g, img.color.b, 0.5f);
     }
 
